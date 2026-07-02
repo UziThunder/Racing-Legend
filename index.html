@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Legends of Endurance Racing - GT3 & Prototype</title>
+    <meta name="description" content="Discover the greatest GT3 and Prototype race cars that conquered Le Mans, Nürburgring, Spa 24 Hours, and the world's toughest endurance races.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
+</head>
+<body>
+
+    <!-- Mouse Spotlight / Radial Glow Backdrop -->
+    <div class="mouse-glow"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Premium Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <h1 class="loader-text">ENDURANCE <span>LEGENDS</span></h1>
+            <div class="loader-subtitle">ENGINEERING PEAK PERFORMANCE</div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="logo">RACING<span>LEGENDS</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#gt3">GT3</a></li>
+            <li><a href="#prototypes">Prototypes</a></li>
+            <li><a href="#history">Winners</a></li>
+            <li><a href="#ecosystem">Ecosystem</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#stats">Stats</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=1920" alt="Racing background" class="parallax-img" loading="lazy" decoding="async">
+            <div class="particles" id="particles"></div>
+            <div class="overlay-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-category-tag reveal-text">Pinnacle of Motorsport</div>
+            <h1 class="hero-title reveal-text">The Legends of <br><span>Endurance Racing</span></h1>
+            <p class="hero-subtitle reveal-text">Discover the greatest GT3 and Prototype race cars that conquered Le Mans, Nürburgring, Spa 24 Hours and the world's toughest endurance races.</p>
+            <div class="hero-ctas reveal-text">
+                <a href="#gt3" class="btn btn-primary">GT3 Class</a>
+                <a href="#prototypes" class="btn btn-outline">Prototypes</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- 2. GT3 Legends -->
+    <section id="gt3" class="section gt3-section carbon-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-up">GT3 <span>Legends</span></h2>
+                <div class="section-title-accent"></div>
+                <p class="section-desc reveal-up">The absolute pinnacle of GT customer racing, featuring naturally aspirated V10s, flat-sixes, and screaming twin-turbo V8 powerplants.</p>
+            </div>
+            <div class="cards-grid" id="gt3-grid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Prototype Legends -->
+    <section id="prototypes" class="section prototype-section graphite-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-up">Prototype <span>Legends</span></h2>
+                <div class="section-title-accent"></div>
+                <p class="section-desc reveal-up">The ultimate proving ground of automotive engineering. LMP1 and Hypercars pushing the absolute boundaries of aerodynamics and hybrid technology.</p>
+            </div>
+            <div class="cards-grid" id="prototype-grid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Legendary Winners Timeline -->
+    <section id="history" class="section timeline-section carbon-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-up">Legendary <span>Winners</span></h2>
+                <div class="section-title-accent"></div>
+                <p class="section-desc reveal-up">Historic endurance victories that etched manufacturers, drivers, and engineering marvels into motorsport folklore.</p>
+            </div>
+            <div class="timeline" id="timeline-container">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 & 6. Manufacturers & Championships -->
+    <section id="ecosystem" class="section ecosystem-section graphite-bg">
+        <div class="container">
+            <div class="ecosystem-grid">
+                
+                <div class="manufacturers">
+                    <h3 class="subsection-title reveal-up">Iconic Manufacturers</h3>
+                    <p class="subsection-desc reveal-up">Click a brand to explore their legendary endurance heritage, racing statistics, and engineering philosophy.</p>
+                    <div class="brands-grid" id="brands-grid">
+                        <div class="brand-item glass-card reveal-up" data-brand="Porsche">Porsche</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Ferrari">Ferrari</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="BMW">BMW</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Mercedes-AMG">Mercedes-AMG</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Audi Sport">Audi Sport</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Toyota GR">Toyota GR</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Cadillac Racing">Cadillac Racing</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Lamborghini">Lamborghini</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="McLaren">McLaren</div>
+                        <div class="brand-item glass-card reveal-up" data-brand="Aston Martin">Aston Martin</div>
+                    </div>
+                </div>
+
+                <div class="championships">
+                    <h3 class="subsection-title reveal-up">Global Championships</h3>
+                    <p class="subsection-desc reveal-up">The elite endurance racing series holding the keys to the most prestigious races on the planet.</p>
+                    <div class="championship-list" id="champ-list">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Gallery -->
+    <section id="gallery" class="section gallery-section carbon-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-up">Racing <span>Gallery</span></h2>
+                <div class="section-title-accent"></div>
+                <p class="section-desc reveal-up">High-speed action and dramatic track moments captured across the world's most challenging corners.</p>
+            </div>
+            
+            <div class="masonry-grid" id="masonry-gallery">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 & 9. Statistics Dashboard & Fun Facts -->
+    <section id="stats" class="section stats-section graphite-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-up">Statistics <span>Dashboard</span></h2>
+                <div class="section-title-accent"></div>
+            </div>
+            
+            <!-- Standard counter cards -->
+            <div class="stats-grid">
+                <div class="stat-card glass-card reveal-up">
+                    <h3 class="counter" data-target="24">0</h3>
+                    <p>Hours of Le Mans Duration</p>
+                </div>
+                <div class="stat-card glass-card reveal-up">
+                    <h3 class="counter" data-target="19">0</h3>
+                    <p>Porsche Le Mans Overall Wins</p>
+                </div>
+                <div class="stat-card glass-card reveal-up">
+                    <h3 class="counter" data-target="1000">0</h3>
+                    <p>Peak Horsepower (TS050)</p>
+                </div>
+                <div class="stat-card glass-card reveal-up">
+                    <h3 class="counter" data-target="345">0</h3>
+                    <p>Top Race Speed (km/h)</p>
+                </div>
+            </div>
+
+            <!-- Performance charts & ranking dashboard -->
+            <div class="dashboard-visuals reveal-up">
+                <div class="dashboard-card glass-card">
+                    <h4>Manufacturers Le Mans Victory Leaderboard</h4>
+                    <div class="ranking-chart">
+                        <div class="ranking-row">
+                            <span class="rank-name">Porsche</span>
+                            <div class="rank-bar-wrapper">
+                                <div class="rank-bar" style="width: 100%; --bar-color: var(--color-red);"></div>
+                            </div>
+                            <span class="rank-value">19 Wins</span>
+                        </div>
+                        <div class="ranking-row">
+                            <span class="rank-name">Audi Sport</span>
+                            <div class="rank-bar-wrapper">
+                                <div class="rank-bar" style="width: 68%; --bar-color: #A0A0A0;"></div>
+                            </div>
+                            <span class="rank-value">13 Wins</span>
+                        </div>
+                        <div class="ranking-row">
+                            <span class="rank-name">Ferrari</span>
+                            <div class="rank-bar-wrapper">
+                                <div class="rank-bar" style="width: 58%; --bar-color: #E5A93B;"></div>
+                            </div>
+                            <span class="rank-value">11 Wins</span>
+                        </div>
+                        <div class="ranking-row">
+                            <span class="rank-name">Toyota Gazoo</span>
+                            <div class="rank-bar-wrapper">
+                                <div class="rank-bar" style="width: 26%; --bar-color: #004D40;"></div>
+                            </div>
+                            <span class="rank-value">5 Wins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card glass-card">
+                    <h4>Endurance Race Demands (Complexity Index)</h4>
+                    <div class="complexity-chart">
+                        <div class="comp-item">
+                            <div class="comp-value">340+</div>
+                            <div class="comp-label">Gear Shifts / Hr</div>
+                            <div class="comp-indicator"><span style="width: 85%;"></span></div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-value">12.5 Gs</div>
+                            <div class="comp-label">Max Combined G-Forces</div>
+                            <div class="comp-indicator"><span style="width: 75%;"></span></div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-value">92%</div>
+                            <div class="comp-label">Lap Time Throttle On</div>
+                            <div class="comp-indicator"><span style="width: 92%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Right-click is disabled by the developer. do ctrl+r to reload");
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        (e.ctrlKey && e.key === 'U') ||
+        (e.ctrlKey && e.key === 'S')) {
+        e.preventDefault();
+        alert("Inspect element is disabled.");
+    }
+});
+</script>
+            <!-- 9. Fun Facts Flip Cards -->
+            <div class="facts-section-container reveal-up">
+                <h3 class="subsection-title text-center">Motorsport Insights</h3>
+                <p class="subsection-desc text-center">Hover or tap on the cards below to reveal secrets of high-performance endurance racing.</p>
+                
+                <div class="facts-grid" id="facts-grid">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer class="footer carbon-bg">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RACING<span>LEGENDS</span></div>
+                <p class="footer-desc">Crafted at the intersection of raw engineering and luxury design. Dedicated to the speed, persistence, and legacy of endurance racing.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@GTWorld" class="social-link">YouTube</a>
+                    <a href="https://www.motorsport.com/" class="social-link">Motorsports.tv</a>
+                    <a href="https://www.instagram.com/usman._ahmed_03/" class="social-link">Web Dev Contact</a>
+                </div>
+                <!-- Privacy Policy Button -->
+                <div class="footer-legal">
+                    <button id="privacyPolicyBtn" class="legal-btn">Privacy Policy</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Racing Legends. Designed with premium racing aesthetics. All Manufacturer rights reserved.</p>
+            </div>
+        </div>
+        <div class="built-by">
+    Built with ❤️ by <strong>Usman Ahmed</strong>
+</div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal-overlay" id="privacy-overlay"></div>
+        <div class="modal-wrapper privacy-modal-wrapper">
+            <span class="close-modal" id="close-privacy-btn">&times;</span>
+            <div class="modal-body-content">
+                <div class="modal-hero" style="height: 120px; background: var(--color-red);">
+                    <div class="modal-hero-overlay" style="background: linear-gradient(180deg, rgba(15,15,19,0.1) 0%, #0f0f13 100%);"></div>
+                    <div class="modal-header-info">
+                        <span class="modal-badge-icon">📄</span>
+                        <h2 class="modal-title-text">Privacy Policy</h2>
+                    </div>
+                </div>
+                <div class="modal-details-grid" style="grid-template-columns: 1fr;">
+                    <div class="modal-detail-block">
+                        <h4>Image Rights</h4>
+                        <p>All vehicle images used on this website are sourced from publicly available channels and are used for educational and informational purposes only. <strong>We do not claim ownership</strong> of any of the images displayed.</p>
+                        <p style="margin-top: 0.8rem;">Images are courtesy of their respective owners, including but not limited to: Unsplash, Wikimedia Commons, Motorsport Images, and Manufacturer Press Kits.</p>
+                    </div>
+                    <div class="modal-detail-block">
+                        <h4>Data Accuracy</h4>
+                        <p>The specifications, stats, and historical information provided are compiled from publicly available sources and are intended for <strong>reference and educational purposes</strong> only. While we strive for accuracy, we do not guarantee the completeness or reliability of the data.</p>
+                    </div>
+                    <div class="modal-detail-block">
+                        <h4>Affiliation Disclaimer</h4>
+                        <p>This is a <strong>fan-made, non-commercial project</strong> created purely for educational and portfolio purposes. <strong>We are not affiliated with, endorsed by, or sponsored by</strong> any of the automotive manufacturers, racing teams, or motorsport organizations featured on this site.</p>
+                    </div>
+                    <div class="modal-detail-block">
+                        <h4>Privacy Policy</h4>
+                        <p>This website does <strong>not</strong> collect, store, or share any personal data. No cookies are used. No tracking scripts are embedded. Your visit is completely anonymous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top-wrapper">
+        <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+            <span>↑</span> Back to Top
+        </button>
+    </div>
+
+    <!-- Lightbox Gallery Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Scripts (Lenis, GSAP) -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Floating Back to Top Button -->
+<button id="floatingTopBtn" class="floating-top-btn" aria-label="Back to top">
+    ↑
+</button>
+
+</body>
+</html>
